@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Titania - eCommerce Website</title>
+
+    <link rel="icon" href="images/logo/favicon.png" type="image/png" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- overlay  -->
+    <div class="overlay"></div>
+
+    <!-- Modal  -->
+    <div class="modal">
+      <div class="modal-close-overlay"></div>
+
+      <div class="modal-content">
+        <button class="modal-close-btn">
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+
+        <div class="newsletter-img">
+          <img
+            src="images/newsletter.png"
+            alt="subscribe newsletter"
+            width="400"
+            height="400"
+          />
+        </div>
+
+        <div class="newsletter">
+          <form action="#">
+            <div class="newsletter-header">
+              <h3 class="newsletter-title">Subscribe Newletter.</h3>
+
+              <p class="newsletter-desc">
+                Subscribe the <b>Titania</b> to get latest products and discount
+                update.
+              </p>
+            </div>
+
+            <input
+              type="email"
+              name="email"
+              class="email-field"
+              placeholder="Email Address"
+            />
+
+            <button type="submit" class="btn-newsletter">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
