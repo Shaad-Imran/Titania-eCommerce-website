@@ -1917,6 +1917,72 @@ body::-webkit-scrollbar-thumb:hover {
   font-size: var(--fs-9);
 }
 
+/* Blog ....  */
+.blog {
+  margin-bottom: 30px;
+}
+
+.blog-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  gap: 15px;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  -webkit-scroll-snap-type: inline mandatory;
+  -ms-scroll-snap-type: inline mandatory;
+  scroll-snap-type: inline mandatory;
+}
+
+.blog-card {
+  min-width: 100%;
+  scroll-snap-align: start;
+}
+
+.blog-banner {
+  width: 100%;
+  -webkit-border-radius: var(--border-radius-md);
+  border-radius: var(--border-radius-md);
+  margin-bottom: 20px;
+}
+
+.blog-category {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  color: var(--salmon-pink);
+  font-size: var(--fs-8);
+}
+
+.blog-title {
+  color: var(--eerie-black);
+  font-size: var(--fs-5);
+  font-weight: var(--weight-600);
+  line-height: 1.4;
+  margin-bottom: 5px;
+  -webkit-transition: var(--transition-timing);
+  -o-transition: var(--transition-timing);
+  transition: var(--transition-timing);
+}
+
+.blog-title:hover {
+  color: var(--salmon-pink);
+}
+
+.blog-meta {
+  color: var(--sonic-silver);
+  font-size: var(--fs-7);
+}
+
+.blog-meta cite {
+  font-style: normal;
+  color: var(--davys-gray);
+}
 /* ................ Responsive ................  */
 @media (min-width: 480px) {
   :root {
@@ -2105,6 +2171,15 @@ body::-webkit-scrollbar-thumb:hover {
 
   .cta-container {
     aspect-ratio: 6 / 5;
+  }
+
+  .blog-container {
+    gap: 30px;
+  }
+
+  .blog-card {
+    min-width: -webkit-calc(50% - 15px);
+    min-width: calc(50% - 15px);
   }
 }
 
@@ -2666,6 +2741,15 @@ body::-webkit-scrollbar-thumb:hover {
     text-align: center;
     min-width: 20%;
   }
+
+  .blog-card {
+    min-width: -webkit-calc(33.33% - 20px);
+    min-width: calc(33.33% - 20px);
+  }
+
+  .blog-title {
+    --fs-5: 1rem;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -2737,6 +2821,15 @@ body::-webkit-scrollbar-thumb:hover {
     -ms-flex-direction: row;
     flex-direction: row;
     text-align: left;
+  }
+
+  .blog {
+    margin-bottom: 50px;
+  }
+
+  .blog-card {
+    min-width: -webkit-calc(25% - 22.5px);
+    min-width: calc(25% - 22.5px);
   }
 }
 
