@@ -65,3 +65,11 @@ for (let i = 0; i < accordionBtn.length; i++) {
     this.classList.toggle("active");
   });
 }
+
+// BAck to top
+backTPBtn = document.querySelector(".back-top-btn");
+window.addEventListener("scroll", () => {
+  window.scrollY >= 400
+    ? backTPBtn.classList.add("active")
+    : backTPBtn.classList.remove("active");
+});

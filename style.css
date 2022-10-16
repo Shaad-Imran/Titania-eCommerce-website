@@ -2180,6 +2180,32 @@ footer {
   color: inherit;
 }
 
+/* Back To Top ....   */
+.back-top-btn {
+  position: fixed;
+  bottom: 1rem;
+  right: 2rem;
+  background-color: var(--salmon-pink);
+  color: var(--white);
+  padding: 1.5rem;
+  border-radius: 50%;
+  box-shadow: 0 1px 4px hsla(0, 0%, 0%, 0.2);
+  z-index: 20;
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transition-timing);
+}
+
+.back-top-btn.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(-10px);
+}
+
+.back-top-btn:is(:hover, :focus) {
+  background-color: hsl(353, 100%, 78%, 0.8);
+}
+
 /* ................ Responsive ................  */
 @media (min-width: 480px) {
   :root {
