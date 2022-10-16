@@ -2196,15 +2196,7 @@ footer {
   transition: var(--transition-timing);
 }
 
-.back-top-btn.active {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(-10px);
-}
 
-.back-top-btn:is(:hover, :focus) {
-  background-color: hsl(353, 100%, 78%, 0.8);
-}
 
 /* ................ Responsive ................  */
 @media (min-width: 480px) {
